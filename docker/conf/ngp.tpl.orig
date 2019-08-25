@@ -1,0 +1,14 @@
+upstream frontend.test {
+				## Can be connected with "ngproxy" network
+			# 
+			server 127.0.0.1:3000;
+}
+server {
+	server_name frontend.test;
+	listen 80 ;
+	access_log  /var/www/log/frontend-access.log;
+	location / {
+		proxy_pass http://frontend.test;
+	}
+}
+
