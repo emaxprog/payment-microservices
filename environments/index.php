@@ -33,7 +33,7 @@ return [
         'path' => 'dev',
         'setWritable' => [
             'payment-acceptance/runtime',
-            'paymentsystem/runtime',
+            'payment-system/runtime',
             'console/runtime',
         ],
         'setExecutable' => [
@@ -42,14 +42,14 @@ return [
         ],
         'setCookieValidationKey' => [
             'payment-acceptance/config/main-local.php',
-            'paymentsystem/config/main-local.php',
+            'payment-system/config/main-local.php',
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
             'payment-acceptance/runtime',
-            'paymentsystem/runtime',
+            'payment-system/runtime',
             'console/runtime',
         ],
         'setExecutable' => [
@@ -57,14 +57,14 @@ return [
         ],
         'setCookieValidationKey' => [
             'payment-acceptance/config/main-local.php',
-            'paymentsystem/config/main-local.php',
+            'payment-system/config/main-local.php',
         ],
     ],
     'ProductionClosed' => [
         'path' => 'closed',
         'setWritable' => [
             'payment-acceptance/runtime',
-            'paymentsystem/runtime',
+            'payment-system/runtime',
             'console/runtime',
         ],
         'setExecutable' => [
@@ -72,7 +72,7 @@ return [
         ],
         'setCookieValidationKey' => [
             'payment-acceptance/config/main-local.php',
-            'paymentsystem/config/main-local.php',
+            'payment-system/config/main-local.php',
         ],
     ],
 ];

@@ -6,7 +6,7 @@
  * @link http://chulakov.com/
  */
 
-namespace common\modules\paymentacceptance;
+namespace common\modules\paymentsystem;
 
 class Module extends \yii\base\Module
 {
@@ -17,7 +17,7 @@ class Module extends \yii\base\Module
     {
         parent::init();
         $this->controllerMap = [
-             'payment' => 'common\modules\paymentacceptance\controllers\PaymentController',
+             'payment' => 'common\modules\paymentsystem\controllers\PaymentController',
         ];
     }
 }

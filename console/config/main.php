@@ -29,11 +29,15 @@ return [
         // ],
         'migrate' => [
             'class' => 'yii\console\controllers\MigrateController',
+            'migrationNamespaces' => [
+                'yii\queue\db\migrations'
+            ],
             'migrationPath' => [
                 '@app/migrations',
                 '@yii/rbac/migrations',
                 '@common/modules/user/migrations',
-                '@vendor/oleg-chulakov-studio/yii2-filestorage/src/migrations',
+                '@common/modules/payment-system/migrations',
+                '@common/modules/payment-acceptance/migrations',
             ],
         ],
     ],
